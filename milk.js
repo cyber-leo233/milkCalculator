@@ -28,7 +28,7 @@ function getMilk () {
 
    if(cash < priceOfMilk) {
      output.style.color = "#fd5e53";
-      output.innerHTML = `You don't have enought money the price of milk is ${priceOfMilk.toFixed(2)}`;
+      output.innerHTML = `You don't have enough money the price of milk is ${priceOfMilk.toFixed(2)}`;
       
    }
     else {
