@@ -27,12 +27,12 @@ function getMilk () {
     
 
    if(cash < priceOfMilk) {
-     output.style.color = "Red";
+     output.style.color = "#fd5e53";
       output.innerHTML = `You don't have enought money the price of milk is ${priceOfMilk.toFixed(2)}`;
       
    }
     else {
-
+   output.style.color = "#c0ffb3";
    output.innerHTML = `you can buy ${Math.floor(amountOfMilk)} ${milkUnit} of milk your change is ${calcChange(cash,priceOfMilk)}`;
     
   }
