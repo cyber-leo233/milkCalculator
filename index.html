@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin:0;
+        padding:0;
+        display: grid;
+        align-items: center;
+        height: 100vh;
+      }
+      div:first-child {
+        padding: 1em 2em;
+        
+      }
+      div form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:70%;
+        margin:0 auto;
+      }
+      #output {
+        text-align: center;
+      }
+    </style>
+  <title>Got Milk?</title>
+</head>
+
+<body>
+  <div class="container bg-dark text-light">
+    <div class="gotmilk">
+
+      <h2 class="text-center">The cost of milk is 2.30 per Gallon plus tax!!</h2>
+      <br>
+      <form >
+        <div class="form-group">
+          <label style="margin-bottom: 2em;" class="form-check-label for="money">How Much Money do you have for milk?</label>
+          <br>
+          <input id="money" type="number">
+          <button class="btn btn-primary" type="submit" id="find-out">Find Out</button>
+        </div>
+      </form>
+
+
+
+    </div>
+
+    <p style="margin-top:2em" id="output"></p>
+  </div>
+  <script src="milk.js"></script>
+</body>
+
+</html>
